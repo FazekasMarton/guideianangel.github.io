@@ -15,7 +15,7 @@ app.use(cors())
 app.get("/", (req, res) => {
     let indexPath = path.join(
         __dirname,
-        "./html/index.html"
+        "./index.html"
     );
     console.log(indexPath);
     res.sendFile(indexPath);
@@ -276,7 +276,7 @@ async function puuid(puuid){
     .then(data => matchHistory(data,puuid))
 }
 async function matchHistory(matchid,puuid){
-  for(j=0;j<10;j++){ // number of games
+  for(j=0;j<50;j++){ // number of games
     console.log("Game "+(j+1)+":")
     apiurl = "https://"+regio+".api.riotgames.com/lol/match/v5/matches/"+matchid[j]+"?api_key="+api_key
     await fetch(apiurl)
