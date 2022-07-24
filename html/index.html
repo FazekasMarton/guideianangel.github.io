@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <title>Guideian Angel</title>
+    <link rel="shortcut icon" href="/img/Guideian_Angel.png" type="image/x-icon">
+</head>
+<body>
+    <div id="navigation">
+        <nav>
+            <input type="text" id="name" placeholder="Enter a name">
+            <select id="tag">
+                <option value="br1">Brazil</option>
+                <option value="eun1" selected>Europe Nordic & East</option>
+                <option value="euw1">Europe West</option>
+                <option value="la1">Latin Amerika North</option>
+                <option value="la2">Latin Amerika South</option>
+                <option value="na1">North Amerika</option>
+                <option value="oc1">Oceania</option>
+                <option value="ru">Russia</option>
+                <option value="tr1">Turkey</option>
+                <option value="jp1">Japan</option>
+                <option value="kr">Republic of Korea</option>
+            </select>
+            <button onclick="standby()" id="start_button">Submit</button>
+        </nav>
+        <div id="progressbar">
+            <div id="bar">
+                <span id="percent">
+                    0%
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div id="me">
+            <span id="mySummonerName"></span>
+            <img id="myChampIcon" src="" alt="">
+            <span id="myChampName"></span>
+        </div>
+        <div id="enemy"></div>
+        <button id="leftButton" onclick="leftButton()">&lt</button>
+        <button id="rightButton" onclick="rightButton()">></button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+    <script src="/js/frontend.js"></script>
+</body>
+</html>

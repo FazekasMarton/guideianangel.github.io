@@ -1,0 +1,174 @@
+html, body, .wrapper{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #222222;
+    position: absolute;
+}
+.wrapper{
+    display: none;   
+    grid-template-columns: 2fr 50px 8fr 50px 2fr;
+    grid-template-rows: 1fr 1fr 1fr 6fr 50px 10fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas: 
+    ". . . . ."
+    ". . header . ."
+    ". . . . ."
+    ". . main . ."
+    ". leftButton main rightButton ."
+    ". . main . ."
+    ". . . . ."
+}
+#me{
+    grid-area: header;
+    background-color: #FF10F0;
+    border: 3px black solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+#myChampIcon{
+    height: 100%;
+}
+.container, #navigation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.enemyPlayer > div:first-child{
+    background-color: #FF10F0;
+    border: 3px black solid;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px auto;
+    height: 100px;
+    width: 90%;
+}
+.enemyPlayer > div:first-child > img{
+    height: 100%;
+}
+#me > span, .enemyPlayer > div:first-child > span{
+    font-size: 50px;
+}
+#enemy{
+    background-color: #222222;
+    border: 3px #FF10F0 solid;
+    border-radius: 30px;
+    grid-area: main;
+}
+.wrapper > button{
+    background-color: #222222;
+    border: 3px #FF10F0 solid;
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    color: #FF10F0;
+    z-index: 4;
+}
+#leftButton{
+    grid-area: leftButton;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#rightButton{
+    grid-area: rightButton;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.enemyPlayer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #222222;
+    overflow: auto;
+}
+.enemyPlayer > div{
+    margin: 55px;
+    margin-right: 35px;
+}
+.enemyPlayer > div > div {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #FF10F0
+}
+.chartContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.chart{
+    width: 50%;
+}
+h1{
+    text-align: center;
+}
+#navigation{
+    position: relative;
+    top: 40%;
+}
+nav{
+    background-image: linear-gradient(to right, black, #FF10F0, #FF10F0, #FF10F0, black);
+    margin: 0 auto 30px auto;
+    border: black 4px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+nav > input, nav > select, nav > button{
+    height: 50px;
+    width: 33%;
+    margin: 0;
+    padding: 0; 
+    border: 0;
+    text-align: center;
+    background-color: #FF10F0;
+    color: black;
+}
+nav > select > option{
+    background-color: black;
+    color: #FF10F0;
+}
+nav > input:hover, nav > select:hover, nav > button:hover{
+    background-color: black;
+    color: #FF10F0;
+}
+#progressbar{
+    background-color: #222222;
+    border: black 3px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 500px;
+    margin: auto;
+    display: none;
+}
+#bar{
+    background-color: #FF10F0;
+    width: 0%;
+    text-align: end;
+}
+#percent{
+    margin: 10px;
+}
+
+/*----scrollbar----*/
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #222222; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #FF10F0; 
+    border-radius: 10px;
+    border: black solid 3px;
+}

@@ -1,0 +1,129 @@
+#enemy{
+    position: relative;
+    overflow: hidden;
+}
+#aaleft{
+    left: -100px;
+    animation-name: al;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#ableft{
+    z-index: 3;
+    left: 0px;
+    animation-name: bl;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#acleft{
+    left: 100px;
+    animation-name: cl;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#adleft{
+    left: 200px;
+    animation-name: dl;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#aeleft{
+    left: 300px;
+    animation-name: el;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#aaright{
+    left: -100px;
+    animation-name: ar;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#abright{
+    z-index: 3;
+    left: 0px;
+    animation-name: br;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#acright{
+    left: 100px;
+    animation-name: cr;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#adright{
+    left: 200px;
+    animation-name: dr;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#aeright{
+    left: 300px;
+    animation-name: er;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes el {
+    0% {left:-2000px}
+    100% {left: -4000px;}
+}
+
+@keyframes al {
+    0% {left:0px}
+    100% {left: -2000px;}
+}
+
+@keyframes bl {
+    0% {left: 2000px}
+    100% {left: 0px;}
+}
+
+@keyframes cl {
+    0% {left: 4000px}
+    100% {left: 2000px;}
+}
+
+@keyframes dl {
+    0% {left: 6000px;}
+    100% {left: 2000px;}
+}
+
+@keyframes ar {
+    100% {left:-2000px}
+    0% {left: -4000px;}
+}
+
+@keyframes br {
+    100% {left:0px}
+    0% {left: -2000px;}
+}
+
+@keyframes cr {
+    100% {left: 2000px}
+    0% {left: 0px;}
+}
+
+@keyframes dr {
+    100% {left: 4000px}
+    0% {left: 2000px;}
+}
+
+@keyframes er {
+    100% {left: 6000px;}
+    0% {left: 5000px;}
+}
+
+#navbar{
+    position: relative;
+    animation-name: navbar;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navbar{
+    0% {top: 40%}
+    100% {top: -20%}
+}
